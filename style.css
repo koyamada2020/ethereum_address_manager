@@ -1,0 +1,40 @@
+header {
+    text-align: center;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.dtable {
+    margin-bottom: 0.5em;
+}
+
+input {
+    margin-bottom: 0.5em;
+}
+
+.priceBody tr td {
+    padding-right: 0.5em;
+}
+
+#box {
+    margin-top: 0.5em;
+}
+
+.addressBox {
+    margin-bottom: 0.5em;
+}
+
+/* bootstrap */
+
+/* スマホ用の表示 */
+@media only screen and (max-width : 736px){
+    .table-block table {
+        width: 100%;
+    }
+}

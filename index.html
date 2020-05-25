@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- js読み込み -->
+    <script type="text/javascript" src="ethereum_address_manager.js"></script>
+    <title>イーサリアムアドレス管理</title>
+</head>
+<body class="container">
+    <header>イーサリアムアドレス管理</header>
+    <div class="content" align="center">
+        <!-- ボタン群 -->
+        <div class="dtable">
+            <table>
+                <tbody class="priceBody">
+                    <tr>
+                        <td></td>
+                        <td>現在価格</td>
+                        <td>総所持ETH</td>
+                        <td id="totalEth"></td>
+                    </tr>
+                    <tr>
+                        <td>ETH/円</td>
+                        <td id="ethjpy"></td>
+                        <td>円換算</td>
+                        <td id="totalJpy"></td>
+                    </tr>
+                    <tr>
+                        <td>ETH/ドル</td>
+                        <td id="ethusd"></td>
+                        <td>ドル換算</td>
+                        <td id="totalUsd"></td>
+                    </tr>
+                    <tr>
+                        <td>ETH/Bitcoin</td>
+                        <td id="ethbtc"></td>
+                        <td>BTC換算</td>
+                        <td id="totalBtc"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div>
+                <input type="text" id="addressBox" value="" size="47" maxlength="42" minlength="10" placeholder="42桁のイーサリアムアドレスを入力">
+            </div>
+            <div>
+                <input type="text" id="memoBox" value="" size="47" maxlength="30" placeholder="メモを入力">
+            </div>
+            <div>
+                <button id="add">追加</button>
+                <button id="reset">リセット</button>
+            </div>
+            <div id="box"></div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!---->
+</body>
+</html>
